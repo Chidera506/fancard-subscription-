@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Daniel • VIP Fan Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header class="site-header">
+      <h1>Jordan Daniel • Fan Card Access</h1>
+      <p>Enter your details to access your personal fan card.</p>
+    </header>
+
+    <section class="login-box">
+      <form id="loginForm">
+        <label for="fanName">Enter your name</label>
+        <input type="text" id="fanName" placeholder="example: cindy" required />
+
+        <label for="fanPassword">Enter your password</label>
+        <input type="password" id="fanPassword" placeholder="your secret code" required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="errorMessage" class="error-message"></p>
+    </section>
+
+    <footer class="footer-note">
+      Official Fan Card Portal • Secure Access
+    </footer>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

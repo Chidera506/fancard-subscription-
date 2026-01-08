@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your VIP Fan Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <section class="card-section">
+      <p id="welcomeMsg" class="welcome-msg"></p>
+      <h2 id="cardTitle"></h2>
+      <p id="membershipBadge" class="membership-badge"></p>
+
+      <div class="card-wrapper animated-card">
+        <img id="cardImage" src="" alt="Fan Card" />
+      </div>
+
+      <!-- STATUS + PRICES (Cindy & Barb only) -->
+      <div id="statusSection" class="status-section">
+        <p id="statusTitle" class="status-title"></p>
+        <p id="statusMessage" class="status-message"></p>
+        <div id="priceList" class="price-list"></div>
+
+        <!-- ACTION BUTTON -->
+        <a id="actionButton" class="action-btn" href="#"></a>
+        <p id="actionHint" class="action-hint"></p>
+      </div>
+
+      <button onclick="goBack()" class="logout-btn">Logout</button>
+    </section>
+
+    <footer class="footer-note">
+      Jordan Daniel • VIP Membership Portal
+    </footer>
+  </div>
+
+  <!-- PAYMENT POPUP -->
+  <div id="paymentPopup" class="popup-overlay">
+    <div class="popup-box">
+      <h3>Payment Required 💳</h3>
+      <p id="popupMessage"></p>
+      <button onclick="closePopup()" class="popup-btn">Okay</button>
+    </div>
+  </div>
+
+  <script src="fan-card.js"></script>
+</body>
+</html>
