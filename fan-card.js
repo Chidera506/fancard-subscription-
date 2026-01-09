@@ -74,7 +74,7 @@ if (fan.id === "cindy") {
   actionButton.href = "#";
   actionButton.onclick = (e) => {
     e.preventDefault();
-    showPopup("Please complete your payment of $2,000 to activate your subscription and enjoy full VIP benefits 💳✨");
+    showPopup("Please complete your payment of $3,000 to activate your subscription and enjoy full VIP benefits 💳✨");
   };
 
   actionHint.textContent = "After payment, your subscription will be confirmed by management.";
